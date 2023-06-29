@@ -134,9 +134,6 @@ input[type='radio'] {
 .nationality-input {
     height: 10rem;
 }
-.nationality {
-    
-}
 
 /** Date of Birth section 
  * 
@@ -145,10 +142,6 @@ input[type='radio'] {
 .birthdate-container {
     display: flex;
     gap: 0.61rem;
-}
-
-.birthdate-container select {
-
 }
 
 .select-btn {
@@ -195,8 +188,6 @@ input[type='radio'] {
     display: flex;
     font-size: 0.875rem;
     gap: 1.19rem;
-}
-.gender {
 }
 </style>
 
