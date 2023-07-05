@@ -1,0 +1,15 @@
+{
+  "users": [
+    {
+      "lastName": "Komarov",
+      "firstName": "Pavel",
+      "password": {
+        "password": "asdasdeE",
+        "confirmPass": "asdasdeE"
+      },
+      "email": "pavelkomarov638@gmail.com",
+      "confirmPass": "asdasdeE",
+      "id": 1
+    }
+  ]
+}
