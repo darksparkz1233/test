@@ -1,6 +1,6 @@
 <script setup>
-import leftFormBanner from './components/leftFormBanner.vue';
-import formView from './components/formView.vue';
+import leftFormBanner from '@/components/leftFormBanner.vue';
+import formView from '@/components/formView.vue';
 // Import Vue3Mq (Vue library for adding breakpoints)
 import { useMq } from 'vue3-mq'
 
