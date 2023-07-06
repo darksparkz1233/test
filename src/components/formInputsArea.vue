@@ -13,7 +13,7 @@ import { onBeforeRouteLeave, useRouter } from 'vue-router'
 // Vue3Mq object
 const mq = useMq()
 // Regular expression for password validating
-const regex = helpers.regex(/^(?=.*[a-z])(?=.*[A-Z]).{8,}$/)
+const regex = helpers.regex(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/)
 
 // Form data input fields
 const formData = reactive({
@@ -34,7 +34,7 @@ const rules = computed(() => {
         password: {
             password: { 
                 required: helpers.withMessage('', required),
-                regex: helpers.withMessage('Password must contain at least 8 characters, one lower and uppercase letters', regex)
+                regex: helpers.withMessage('Password must contain at least 8 characters, one number, one lower and uppercase letters', regex)
             }, 
             confirmPass: { 
                 required, 
@@ -71,7 +71,7 @@ onBeforeRouteLeave(() => {
     v$.value.$validate()
 
     if(v$.value.$invalid) {
-        router.push('/signup')   
+        router.push('/')   
     }
 })
 

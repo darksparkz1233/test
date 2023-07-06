@@ -1,5 +1,4 @@
 <script setup>
-import formInputsArea from './formInputsArea.vue';
 import { useMq } from 'vue3-mq'
 
 const mq = useMq()
