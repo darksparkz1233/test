@@ -1,9 +1,3 @@
-<script setup>
-import { useMq } from 'vue3-mq'
-// Vue3Mq object
-const mq = useMq()
-</script>
-
 <template>
     <div class="wrapper">
         <div class="title-wrapper">

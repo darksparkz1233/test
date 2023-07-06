@@ -10,12 +10,10 @@ const mq = useMq()
 <template>
   <div class="form-container" :class="mq.phone ? 'form-container-phone' : 'form-container'">
 
-
     <leftFormBanner v-if="mq.tabletPlus" />
 
-
-
     <formView />
+    
   </div>
 </template>
 
